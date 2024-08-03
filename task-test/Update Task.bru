@@ -1,0 +1,19 @@
+meta {
+  name: Update Task
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3000/api/update-task
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "TaskId" : 1,
+    "Name" : "Format PC",
+    "Deadline" : "2024-08-09"
+  }
+}

@@ -1,0 +1,19 @@
+meta {
+  name: New Task
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/api/create-task
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "TaskId" : 1,
+    "Name" : "Delete All Files",
+    "Deadline" : "2024-08-06"
+  }
+}
