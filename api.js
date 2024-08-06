@@ -10,7 +10,7 @@ try {
     console.error("Connection error ", error);
 }
 
-var TaskModel = require('./task_schema');
+let TaskModel = require('./task_schema');
 
 router.get("/all-task", async(req, res) => {
     try {
