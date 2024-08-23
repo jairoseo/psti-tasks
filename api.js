@@ -32,7 +32,6 @@ router.post("/create-task", async(req, res) => {
             await task.save();
             res.json(task);
         } catch (error) {
-            console.log(err);
             res.status(500).send("Internal error\n");
         }
     }else{
